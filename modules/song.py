@@ -14,7 +14,9 @@ APPER="Kingdomowner"
 OWNER="⚡ Chanel ⚡"
 GITCLONE="https://telegram.me/share/url?url=t.me/kingdom_family"
 B2="https://t.me/kingdom_family"
-BUTTON1="⚡Support Us ⚡"
+BUTTON1="⚡ Support Us ⚡"
+BUTTON2="⚡ Share ⚡"
+B3="https://telegram.me/share/url?url=t.me/kingdom_family_chanel"
 
 def time_to_seconds(time):
     stringt = str(time)
@@ -30,7 +32,9 @@ async def start(client, message):
                  ],[
                     InlineKeyboardButton(OWNER, url=f"https://t.me/kingdom_family_chanel"),
                     InlineKeyboardButton(ABS, url=B2)
-            ]
+                 ],[
+                    InlineKeyboardButton(BUTTON2,url=B3)
+             ]
           ]
         ),
         reply_to_message_id=message.message_id
